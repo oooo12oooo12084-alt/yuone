@@ -1,0 +1,525 @@
+[
+  {
+    "id": 0,
+    "img": "img/product/0.png",
+    "name": "SAMSUNG 55 Inch UHD 4K Smart TV With Receiver",
+    "price": 350,
+    "catetory":"electronics"
+  },
+  {
+    "id": 1,
+    "img": "img/product/1.png",
+    "name": "Redmi 13C Dual SIM with 6GB RAM",
+    "price": 280,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 2,
+    "img": "img/product/2.png",
+    "name": "Dell Laptop Latitude 5530 Core i7-1255U 8GB SSD",
+    "price": 400,
+    "catetory":"electronics"
+  },
+  {
+    "id": 3,
+    "img": "img/product/3.png",
+    "name": "Canon EOS RP Mirrorless Camera",
+    "price": 530,
+    "catetory":"electronics"
+  },
+  {
+    "id": 4,
+    "img": "img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 5,
+    "img": "img/product/5.png",
+    "name": "Samsung 27-Inch G55C Odyssey QHD 4k",
+    "price": 280,
+    "catetory":"electronics"
+  },
+  {
+    "id": 6,
+    "img": "img/product/6.png",
+    "name": "Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)",
+    "price": 220,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 7,
+    "img": "img/product/7.png",
+    "name": "HP Victus Gaming Laptop 8RAM SSD",
+    "price": 370,
+    "catetory":"electronics"
+  },
+  {
+    "id": 8,
+    "img": "img/product/8.png",
+    "name": "Xiaomi Redmi 13C Dual SIM 8GB",
+    "price": 320,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 9,
+    "img": "img/product/9.png",
+    "name": "Handheld Barcode Scanner 1D/2D/QR Code",
+    "price": 80,
+    "old_price": 100,
+    "catetory":"electronics"
+  },
+  {
+    "id": 10,
+    "img": "img/product/10.png",
+    "name": "Large Venue building mapping Projector",
+    "price": 300,
+    "catetory":"electronics"
+  },
+  {
+    "id": 11,
+    "img": "img/product/11.png",
+    "name": "Infinix Hot 40i (RAM: 4+4GB, 128GB)",
+    "price": 260,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 12,
+    "img": "img/product/12.png",
+    "name": "HP DeskJet 2710 Printer, All-in-One",
+    "price": 370,
+    "catetory":"electronics"
+  },
+  {
+    "id": 13,
+    "img": "img/product/13.png",
+    "name": "Fuzzy Logic Rice Cooker DIGITAL-JAR 1.8L 940W – HD4515/67",
+    "price": 490,
+    "catetory":"appliances"
+  },
+  {
+    "id": 14,
+    "img": "img/product/14.png",
+    "name": "Sencor STS 5070SS Electric Toaster for Four Slices",
+    "price": 340,
+    "catetory":"appliances"
+  },
+  {
+    "id": 15,
+    "img": "img/product/15.png",
+    "name": "Infinix Smart 6 Plus (Miracle Black)",
+    "price": 240,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 16,
+    "img": "img/product/16.png",
+    "name": "Washing Machine 959 Series 8kg Senator Aqua SX, Silver",
+    "price": 600,
+    "old_price": 700,
+    "catetory":"appliances"
+  },
+  {
+    "id": 17,
+    "img": "img/product/17.png",
+    "name": "HIKVISION PTZ Camera 4K Outdoo",
+    "price": 185,
+    "catetory":"electronics"
+  },
+  {
+    "id": 18,
+    "img": "img/product/18.png",
+    "name": "OPPO Reno11 5G 256GB 12GB",
+    "price": 225,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 19,
+    "img": "img/product/19.png",
+    "name": "VIVAX kettle WH-175L with a capacity of 1.7 ",
+    "price": 140,
+    "catetory":"appliances"
+  },
+  {
+    "id": 20,
+    "img": "img/product/20.png",
+    "name": "Kenstar Ester ABS Plastic 750W Mixer Grinder",
+    "price": 280,
+    "old_price": 330,
+    "catetory":"appliances"
+  },
+  {
+    "id": 21,
+    "img": "img/product/21.png",
+    "name": "Multifunctional Food Processor",
+    "price": 350,
+    "catetory":"appliances"
+  },
+  {
+    "id": 22,
+    "img": "img/product/22.png",
+    "name": "Zanussi Washing Machine 8 Kg 1200 RPM ",
+    "price": 580,
+    "catetory":"appliances"
+  },
+  {
+    "id": 23,
+    "img": "img/product/23.png",
+    "name": "Sharp 42 Lt Electronic Oven Convection",
+    "price": 400,
+    "catetory":"appliances"
+  },
+  {
+    "id": 24,
+    "img": "img/product/24.png",
+    "name": "Lenovo Monitor Legion R27fc-30 Gaming Curved",
+    "price": 300,
+    "old_price": 380,
+    "catetory":"electronics"
+  },
+  {
+    "id": 25,
+    "img": "img/product/25.png",
+    "name": "NVIDIA RTX 4090 Graphics Card",
+    "price": 1500,
+    "catetory":"gpu"
+  },
+  {
+    "id": 26,
+    "img": "img/product/26.png",
+    "name": "NVIDIA RTX 4080 Graphics Card",
+    "price": 1200,
+    "catetory":"gpu"
+  },
+  {
+    "id": 27,
+    "img": "img/product/27.png",
+    "name": "AMD Radeon RX 7900 XTX",
+    "price": 900,
+    "catetory":"gpu"
+  },
+  {
+    "id": 28,
+    "img": "IMAGE/log102.png",
+    "name": "Logitech G102 Gaming Mouse",
+    "price": 420,
+    "catetory":"mouse"
+  },
+  {
+    "id": 101,
+    "img": "IMAGE/razer v3.png",
+    "name": "RAZER BASILISK V3 X HYPERSPEED WIRELESS - BLACK",
+    "price": 1500,
+    "old_price": 1800,
+    "catetory":"mouse"
+  },
+  {
+    "id": 102,
+    "img": "IMAGE/v3.png",
+    "name": "Razer Viper V3 HyperSpeed",
+    "price": 17000,
+    "old_price": 17500,
+    "catetory":"mouse"
+  },
+  {
+    "id": 103,
+    "img": "IMAGE/deathadder.png",
+    "name": "RAZER DEATHADDER ESSENTIAL",
+    "price": 8500,
+    "old_price": 9500,
+    "catetory":"mouse"
+  },
+  {
+    "id": 104,
+    "img": "IMAGE/prox.png",
+    "name": "LOGITECH G PRO X Superlight Wireless Gaming Mouse",
+    "price": 22000,
+    "old_price": 25000,
+    "catetory":"mouse"
+  },
+  {
+    "id": 105,
+    "img": "IMAGE/g502.png",
+    "name": "Logitech G502 X PLUS Wireless Gaming Mouse RGB",
+    "price": 18000,
+    "old_price": 20000,
+    "catetory":"mouse"
+  },
+  {
+    "id": 100,
+    "img": "img/product/28.png",
+    "name": "Logitech MX Master 3S Wireless Mouse",
+    "price": 99,
+    "catetory":"mouse"
+  },
+  {
+    "id": 29,
+    "img": "img/product/29.png",
+    "name": "Razer DeathAdder V3 Gaming Mouse",
+    "price": 70,
+    "catetory":"mouse"
+  },
+  {
+    "id": 30,
+    "img": "img/product/30.png",
+    "name": "SteelSeries Rival 5 Mouse",
+    "price": 60,
+    "catetory":"mouse"
+  },
+  {
+    "id": 31,
+    "img": "img/product/31.png",
+    "name": "Mechanical Keyboard RGB Backlit",
+    "price": 150,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 32,
+    "img": "img/product/32.png",
+    "name": "Corsair K95 Platinum Keyboard",
+    "price": 200,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 33,
+    "img": "img/product/33.png",
+    "name": "Ducky One 2 Mini Keyboard",
+    "price": 120,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 34,
+    "img": "img/product/0.png",
+    "name": "Intel Core i9-13900K Processor",
+    "price": 590,
+    "catetory":"cpu"
+  },
+  {
+    "id": 35,
+    "img": "img/product/1.png",
+    "name": "AMD Ryzen 9 7950X Processor",
+    "price": 550,
+    "catetory":"cpu"
+  },
+  {
+    "id": 36,
+    "img": "img/product/2.png",
+    "name": "Intel Core i7-13700K Processor",
+    "price": 420,
+    "catetory":"cpu"
+  },
+  {
+    "id": 37,
+    "img": "img/product/3.png",
+    "name": "AMD Ryzen 7 7700X Processor",
+    "price": 380,
+    "catetory":"cpu"
+  },
+  {
+    "id": 38,
+    "img": "img/product/4.png",
+    "name": "Intel Core i5-13600K Processor",
+    "price": 280,
+    "catetory":"cpu"
+  },
+  {
+    "id": 39,
+    "img": "img/product/6.png",
+    "name": "AMD Ryzen 5 7600X Processor",
+    "price": 250,
+    "catetory":"cpu"
+  },
+  {
+    "id": 40,
+    "img": "img/product/7.png",
+    "name": "Intel Core i9-12900K Processor",
+    "price": 520,
+    "catetory":"cpu"
+  },
+  {
+    "id": 41,
+    "img": "img/product/8.png",
+    "name": "AMD Ryzen 9 5900X Processor",
+    "price": 480,
+    "catetory":"cpu"
+  },
+  {
+    "id": 42,
+    "img": "img/product/9.png",
+    "name": "Intel Core i7-12700K Processor",
+    "price": 380,
+    "catetory":"cpu"
+  },
+  {
+    "id": 43,
+    "img": "img/product/5.png",
+    "name": "Corsair Vengeance RGB Pro 32GB DDR4",
+    "price": 150,
+    "catetory":"ram"
+  },
+  {
+    "id": 40,
+    "img": "img/product/6.png",
+    "name": "G.Skill Trident Z RGB 32GB DDR4",
+    "price": 140,
+    "catetory":"ram"
+  },
+  {
+    "id": 41,
+    "img": "img/product/7.png",
+    "name": "Kingston HyperX Fury 16GB DDR4",
+    "price": 80,
+    "catetory":"ram"
+  },
+  {
+    "id": 42,
+    "img": "img/product/8.png",
+    "name": "Crucial Ballistix 32GB DDR4",
+    "price": 130,
+    "catetory":"ram"
+  },
+  {
+    "id": 43,
+    "img": "img/product/9.png",
+    "name": "Team T-Force Delta RGB 16GB DDR4",
+    "price": 75,
+    "catetory":"ram"
+  },
+  {
+    "id": 44,
+    "img": "img/product/10.png",
+    "name": "NVIDIA RTX 4070 Graphics Card",
+    "price": 600,
+    "catetory":"gpu"
+  },
+  {
+    "id": 45,
+    "img": "img/product/11.png",
+    "name": "NVIDIA RTX 4060 Graphics Card",
+    "price": 300,
+    "catetory":"gpu"
+  },
+  {
+    "id": 46,
+    "img": "img/product/12.png",
+    "name": "AMD Radeon RX 6900 XT",
+    "price": 750,
+    "catetory":"gpu"
+  },
+  {
+    "id": 47,
+    "img": "img/product/13.png",
+    "name": "Intel Arc A770 Graphics Card",
+    "price": 350,
+    "catetory":"gpu"
+  },
+  {
+    "id": 48,
+    "img": "img/product/14.png",
+    "name": "NVIDIA RTX 4050 Graphics Card",
+    "price": 250,
+    "catetory":"gpu"
+  },
+  {
+    "id": 49,
+    "img": "img/product/15.png",
+    "name": "Logitech G Pro X Superlight Wireless Mouse",
+    "price": 130,
+    "catetory":"mouse"
+  },
+  {
+    "id": 50,
+    "img": "img/product/16.png",
+    "name": "Razer Basilisk V3 Pro Gaming Mouse",
+    "price": 110,
+    "catetory":"mouse"
+  },
+  {
+    "id": 51,
+    "img": "img/product/17.png",
+    "name": "SteelSeries Prime Wireless Mouse",
+    "price": 90,
+    "catetory":"mouse"
+  },
+  {
+    "id": 52,
+    "img": "img/product/18.png",
+    "name": "Corsair Dark Core RGB Pro SE Mouse",
+    "price": 85,
+    "catetory":"mouse"
+  },
+  {
+    "id": 53,
+    "img": "img/product/19.png",
+    "name": "Logitech G502 HERO Gaming Mouse",
+    "price": 65,
+    "catetory":"mouse"
+  },
+  {
+    "id": 54,
+    "img": "img/product/20.png",
+    "name": "HyperX Alloy FPS RGB Keyboard",
+    "price": 110,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 55,
+    "img": "img/product/21.png",
+    "name": "Razer BlackWidow V3 Keyboard",
+    "price": 140,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 56,
+    "img": "img/product/22.png",
+    "name": "SteelSeries Apex Pro TKL Keyboard",
+    "price": 160,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 57,
+    "img": "img/product/23.png",
+    "name": "ASUS ROG Strix Scope RX Keyboard",
+    "price": 130,
+    "catetory":"keyboard"
+  },
+  {
+    "id": 58,
+    "img": "img/product/24.png",
+    "name": "G.Skill Trident Z RGB 64GB DDR4",
+    "price": 220,
+    "catetory":"ram"
+  },
+  {
+    "id": 59,
+    "img": "img/product/25.png",
+    "name": "Corsair Vengeance LPX 16GB DDR4",
+    "price": 70,
+    "catetory":"ram"
+  },
+  {
+    "id": 60,
+    "img": "img/product/26.png",
+    "name": "Kingston Fury Beast 32GB DDR5",
+    "price": 180,
+    "catetory":"ram"
+  },
+  {
+    "id": 61,
+    "img": "img/product/27.png",
+    "name": "Crucial Ballistix MAX 32GB DDR4",
+    "price": 160,
+    "catetory":"ram"
+  },
+  {
+    "id": 62,
+    "img": "img/product/28.png",
+    "name": "Team T-Force Vulcan Z 16GB DDR4",
+    "price": 55,
+    "catetory":"ram"
+  }
+]

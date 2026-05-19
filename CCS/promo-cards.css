@@ -1,0 +1,105 @@
+.promo-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.promo-card-header h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.promo-card-header .promo-card-badge {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-card-header .promo-card-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover .promo-card-header .promo-card-badge img {
+    transform: scale(1.1);
+}
+
+.promo-card-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.promo-card-price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.promo-card-price .current-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.promo-card-price .old-price {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.promo-card-timer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.timer-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.timer-content span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.timer-content small {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.promo-card-buy-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.promo-card-buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}

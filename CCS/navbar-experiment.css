@@ -1,0 +1,164 @@
+/* Temporary navbar experiment preview.
+   This file is only loaded by preview-navbar-experiment.html. */
+
+.top_header{
+    background:
+        radial-gradient(circle at 16% 0%, rgba(0, 198, 255, 0.2), transparent 34%),
+        radial-gradient(circle at 86% 10%, rgba(132, 76, 255, 0.16), transparent 30%),
+        rgba(7, 23, 57, 0.88);
+    border-bottom-color: rgba(0, 198, 255, 0.2);
+}
+
+.top_header .container{
+    gap: 18px;
+}
+
+.logo{
+    filter: drop-shadow(0 0 14px rgba(0, 198, 255, 0.28));
+}
+
+.search-box{
+    background:
+        linear-gradient(135deg, rgba(12, 25, 50, 0.88), rgba(8, 18, 38, 0.9));
+    border-color: rgba(0, 198, 255, 0.32);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.search-box:focus-within{
+    border-color: rgba(0, 229, 255, 0.75);
+    box-shadow:
+        0 12px 34px rgba(0, 114, 255, 0.28),
+        0 0 28px rgba(0, 229, 255, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.search-box button{
+    position: relative;
+    color: #f4fbff;
+}
+
+.search-box button::before{
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(0, 198, 255, 0.08);
+    border: 1px solid rgba(0, 198, 255, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.search-box button:hover::before{
+    transform: scale(1.14);
+    opacity: 0.9;
+}
+
+.search-box button svg{
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 7px rgba(0, 198, 255, 0.45));
+}
+
+.header_icones .icon,
+.header_icones .contact-phone{
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.header_icones .icon{
+    background:
+        radial-gradient(circle at 35% 28%, rgba(255, 255, 255, 0.16), transparent 30%),
+        rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 198, 255, 0.12);
+}
+
+.header_icones .icon:hover{
+    transform: translateY(-3px) scale(1.04);
+}
+
+.header_icones .contact-phone{
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(0, 198, 255, 0.34);
+}
+
+.header_icones .contact-phone::before{
+    content: '';
+    position: absolute;
+    inset: -40%;
+    background: conic-gradient(from 0deg, transparent, rgba(0, 198, 255, 0.18), transparent 32%);
+    animation: phone-ring-light 4s linear infinite;
+}
+
+.header_icones .contact-phone img,
+.header_icones .contact-phone span{
+    position: relative;
+    z-index: 1;
+}
+
+.header_icones .contact-phone img{
+    animation: phone-bounce 2.4s ease-in-out infinite;
+}
+
+.gaming-nav{
+    background:
+        linear-gradient(90deg, rgba(4, 16, 39, 0.96), rgba(8, 29, 59, 0.94), rgba(4, 16, 39, 0.96));
+}
+
+.gaming-nav ul{
+    border-color: rgba(0, 198, 255, 0.22);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025));
+}
+
+.gaming-nav ul li a{
+    isolation: isolate;
+}
+
+.gaming-nav ul li a i{
+    filter: drop-shadow(0 0 6px rgba(0, 198, 255, 0.24));
+}
+
+.gaming-nav ul li a:hover i{
+    animation: nav-icon-pop 0.5s ease both;
+}
+
+@keyframes phone-ring-light{
+    to{ transform: rotate(360deg); }
+}
+
+@keyframes phone-bounce{
+    0%, 100%{ transform: scale(1) rotate(0deg); }
+    12%{ transform: scale(1.08) rotate(-5deg); }
+    24%{ transform: scale(1.02) rotate(4deg); }
+    36%{ transform: scale(1.06) rotate(-3deg); }
+    48%{ transform: scale(1) rotate(0deg); }
+}
+
+@keyframes nav-icon-pop{
+    0%{ transform: scale(1) translateY(0); }
+    45%{ transform: scale(1.22) translateY(-2px); }
+    100%{ transform: scale(1.12) translateY(-1px); }
+}
+
+@media (max-width: 768px){
+    .top_header .container{
+        gap: 8px 10px;
+    }
+
+    .logo{
+        width: 108px;
+    }
+
+    .logo img,
+    .logo img.real-logo{
+        max-width: 108px;
+    }
+
+    .search-box{
+        height: 50px;
+    }
+}

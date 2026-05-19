@@ -1,0 +1,116 @@
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+  transform: scale(1.05);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0078c8;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+/* Add animation to the active slide */
+.swiper-slide-active {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* Discount badge styling (safe, non-invasive) */
+.sale_prsent, .sale_present, .sale-percent {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(229,57,53,0.95);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  z-index: 10;
+}
+
+/* Ensure product image container centers image */
+.product_img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  /* Make images larger to remove gaps but keep aspect ratio */
+  .swiper-slide img,
+  .product_img img {
+    max-width: 92%;
+    width: auto;
+    height: auto;
+    padding: 6px;
+    transform: scale(1);
+  }
+
+  /* Keep buy buttons below image and visible */
+  .product_buttons {
+    position: relative !important;
+    margin-top: 8px;
+    transform: none !important;
+    bottom: auto !important;
+  }
+
+  /* Reduce badge size and padding on small screens */
+  .sale_prsent, .sale_present, .sale-percent {
+    top: 8px;
+    left: 8px;
+    padding: 4px 6px;
+    font-size: 0.8rem;
+  }
+
+  /* Reduce spacing that can cause empty gaps */
+  .swiper-wrapper,
+  .swiper-slide {
+    align-items: flex-start;
+  }
+}

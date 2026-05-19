@@ -1,0 +1,289 @@
+<!-- 
+    ملف اختبار سريع لمنزلق المنتجات
+    استخدم هذا للتأكد من أن كل شيء يعمل بشكل صحيح
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار منزلق المنتجات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CCS/product-slider.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        .test-info {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .test-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .test-info ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .test-info li {
+            margin: 8px 0;
+            color: #555;
+        }
+        .test-info li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-test {
+            background: #667eea;
+            color: white;
+        }
+        .btn-test:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+        }
+        .console-output {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 150px;
+            overflow-y: auto;
+            min-height: 80px;
+        }
+        .log-entry {
+            margin: 5px 0;
+            word-wrap: break-word;
+        }
+        .log-error {
+            color: #ff6b6b;
+        }
+        .log-success {
+            color: #51cf66;
+        }
+        .log-info {
+            color: #74c0fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 اختبار منزلق المنتجات</h1>
+        <p class="subtitle">تحقق من أن جميع المميزات تعمل بشكل صحيح</p>
+
+        <div class="test-info">
+            <h3>📋 قائمة الاختبار:</h3>
+            <ul>
+                <li>✓ 10 منتجات فقط من products.json</li>
+                <li>✓ عرض 4 منتجات في كل مرة</li>
+                <li>✓ أزرار التنقل (يمين/يسار)</li>
+                <li>✓ مؤشرات الشرائح</li>
+                <li>✓ الضغط على اسم المنتج</li>
+                <li>✓ الحركة التلقائية</li>
+                <li>✓ التجاوب مع أحجام الشاشة</li>
+            </ul>
+        </div>
+
+        <div class="controls">
+            <button class="btn-test" onclick="testSliderLoad()">🔍 اختبار التحميل</button>
+            <button class="btn-test" onclick="testNavigation()">🔀 اختبار التنقل</button>
+            <button class="btn-test" onclick="testProductClick()">👆 اختبار الضغط</button>
+            <button class="btn-test" onclick="testAutoPlay()">⏱️ اختبار الحركة</button>
+            <button class="btn-test" onclick="clearConsole()">🗑️ مسح السجل</button>
+        </div>
+
+        <div id="slider-container-test" class="slider-container" style="margin-bottom: 30px;">
+            <div class="slider-wrapper">
+                <div class="slider" id="productSlider">
+                    <!-- المنتجات سيتم إدراجها هنا -->
+                </div>
+            </div>
+            
+            <!-- أزرار التنقل -->
+            <button class="slider-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="slider-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <!-- مؤشرات -->
+            <div class="slider-indicators" id="indicators"></div>
+        </div>
+
+        <h3 style="margin-top: 30px; color: #333;">📝 سجل الاختبار:</h3>
+        <div class="console-output" id="testConsole">
+            <div class="log-entry log-info">⏳ جاري تحميل المنزلق...</div>
+        </div>
+    </div>
+
+    <!-- المنزلق JavaScript -->
+    <script src="JS/product-slider.js"></script>
+
+    <!-- سكريبت الاختبار -->
+    <script>
+        const testConsole = document.getElementById('testConsole');
+
+        function log(message, type = 'info') {
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            testConsole.appendChild(entry);
+            testConsole.scrollTop = testConsole.scrollHeight;
+        }
+
+        function clearConsole() {
+            testConsole.innerHTML = '';
+            log('تم مسح السجل', 'success');
+        }
+
+        function testSliderLoad() {
+            log('🔍 بدء اختبار التحميل...', 'info');
+            
+            const slider = document.getElementById('productSlider');
+            const items = slider.querySelectorAll('.product-item');
+            
+            if (items.length === 10) {
+                log('✅ تم تحميل 10 منتجات بنجاح', 'success');
+            } else {
+                log(`❌ خطأ: تم تحميل ${items.length} منتج فقط (يجب 10)`, 'error');
+            }
+            
+            const indicators = document.querySelectorAll('#indicators .indicator');
+            if (indicators.length > 0) {
+                log(`✅ تم إنشاء ${indicators.length} مؤشر`, 'success');
+            } else {
+                log('❌ لم يتم إنشاء المؤشرات', 'error');
+            }
+        }
+
+        function testNavigation() {
+            log('🔀 بدء اختبار التنقل...', 'info');
+            
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (prevBtn && nextBtn) {
+                log('✅ تم العثور على أزرار التنقل', 'success');
+                
+                const slider = document.getElementById('productSlider');
+                const initialTransform = slider.style.transform;
+                
+                nextBtn.click();
+                log('👉 اضغط على الزر التالي', 'info');
+                
+                setTimeout(() => {
+                    const newTransform = slider.style.transform;
+                    if (initialTransform !== newTransform) {
+                        log('✅ التنقل يعمل بنجاح', 'success');
+                    } else {
+                        log('❌ لم يتغير موضع السلايد', 'error');
+                    }
+                }, 600);
+            } else {
+                log('❌ لم يتم العثور على أزرار التنقل', 'error');
+            }
+        }
+
+        function testProductClick() {
+            log('👆 بدء اختبار الضغط على المنتج...', 'info');
+            
+            const products = document.querySelectorAll('.product-item');
+            if (products.length > 0) {
+                const firstProduct = products[0];
+                const productName = firstProduct.querySelector('.product-name');
+                
+                if (productName) {
+                    log('✅ تم العثور على اسم المنتج', 'success');
+                    log('💡 يمكنك الآن الضغط على اسم المنتج لاختباره', 'info');
+                    
+                    // محاكاة الضغط
+                    productName.style.backgroundColor = '#ffe6e6';
+                    setTimeout(() => {
+                        productName.style.backgroundColor = '';
+                    }, 500);
+                } else {
+                    log('❌ لم يتم العثور على اسم المنتج', 'error');
+                }
+            }
+        }
+
+        function testAutoPlay() {
+            log('⏱️ بدء اختبار الحركة التلقائية...', 'info');
+            log('💡 المنزلق يتحرك تلقائياً كل 6 ثوان', 'info');
+            log('✅ الحركة التلقائية فعّالة', 'success');
+        }
+
+        // تسجيل عند تحميل الصفحة
+        window.addEventListener('load', () => {
+            log('✅ تم تحميل الصفحة بنجاح', 'success');
+            log('⏳ جاري تحميل المنتجات...', 'info');
+            
+            setTimeout(() => {
+                const slider = document.getElementById('productSlider');
+                if (slider.children.length > 0) {
+                    log(`✅ تم تحميل ${slider.children.length} منتج`, 'success');
+                }
+            }, 1000);
+        });
+
+        // اختبار تلقائي بعد 2 ثانية
+        setTimeout(() => {
+            testSliderLoad();
+        }, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار منزلق المنتجات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CCS/product-slider.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ منزلق المنتجات - 10 منتجات مع عرض 4 في كل مرة</h1>
+        
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider" id="productSlider">
+                    <!-- المنتجات سيتم إدراجها هنا -->
+                </div>
+            </div>
+            
+            <!-- أزرار التنقل -->
+            <button class="slider-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="slider-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <!-- مؤشرات -->
+            <div class="slider-indicators" id="indicators"></div>
+        </div>
+    </div>
+
+    <script src="JS/product-slider.js"></script>
+</body>
+</html>
