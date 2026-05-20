@@ -183,23 +183,44 @@
   },
   {
     "id": 25,
-    "img": "img/product/25.png",
-    "name": "NVIDIA RTX 4090 Graphics Card",
-    "price": 1500,
+    "img": "IMAGE/RTX 4060.png",
+    "name": "RTX 4060",
+    "price": 79000,
     "catetory":"gpu"
   },
   {
     "id": 26,
-    "img": "img/product/26.png",
-    "name": "NVIDIA RTX 4080 Graphics Card",
-    "price": 1200,
+    "img": "IMAGE/RTX3060.png",
+    "name": "RTX 3060 12GB",
+    "price": 60000,
     "catetory":"gpu"
   },
   {
     "id": 27,
-    "img": "img/product/27.png",
-    "name": "AMD Radeon RX 7900 XTX",
-    "price": 900,
+    "img": "IMAGE/4070RTX.png",
+    "name": "RTX 4070",
+    "price": 125000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 28,
+    "img": "IMAGE/RX6600.png",
+    "name": "RX 6600",
+    "price": 49000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 29,
+    "img": "IMAGE/RX 6700x.png",
+    "name": "RX 6700 XT",
+    "price": 78000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 30,
+    "img": "IMAGE/GTX 1660.png",
+    "name": "GTX 1660 Super",
+    "price": 39000,
     "catetory":"gpu"
   },
   {
@@ -293,65 +314,44 @@
   },
   {
     "id": 34,
-    "img": "img/product/0.png",
-    "name": "Intel Core i9-13900K Processor",
-    "price": 590,
+    "img": "IMAGE/i7 11700k.png",
+    "name": "Intel Core i7-11700K Processor",
+    "price": 43000,
     "catetory":"cpu"
   },
   {
     "id": 35,
-    "img": "img/product/1.png",
-    "name": "AMD Ryzen 9 7950X Processor",
-    "price": 550,
+    "img": "IMAGE/i5 12400f.png",
+    "name": "Intel Core i5-12400F",
+    "price": 23900,
     "catetory":"cpu"
   },
   {
     "id": 36,
-    "img": "img/product/2.png",
-    "name": "Intel Core i7-13700K Processor",
-    "price": 420,
+    "img": "IMAGE/i5 14600k.png",
+    "name": "Intel Core i5-14600K Processor",
+    "price": 49500,
     "catetory":"cpu"
   },
   {
     "id": 37,
-    "img": "img/product/3.png",
-    "name": "AMD Ryzen 7 7700X Processor",
-    "price": 380,
+    "img": "IMAGE/rayzen 5 5600g.png",
+    "name": "AMD Ryzen 5 PRO 5650G TRAY",
+    "price": 25500,
     "catetory":"cpu"
   },
   {
     "id": 38,
-    "img": "img/product/4.png",
-    "name": "Intel Core i5-13600K Processor",
-    "price": 280,
+    "img": "IMAGE/5 5700x.png",
+    "name": "AMD Ryzen 7 5700X",
+    "price": 38900,
     "catetory":"cpu"
   },
   {
     "id": 39,
-    "img": "img/product/6.png",
-    "name": "AMD Ryzen 5 7600X Processor",
-    "price": 250,
-    "catetory":"cpu"
-  },
-  {
-    "id": 40,
-    "img": "img/product/7.png",
-    "name": "Intel Core i9-12900K Processor",
-    "price": 520,
-    "catetory":"cpu"
-  },
-  {
-    "id": 41,
-    "img": "img/product/8.png",
-    "name": "AMD Ryzen 9 5900X Processor",
-    "price": 480,
-    "catetory":"cpu"
-  },
-  {
-    "id": 42,
-    "img": "img/product/9.png",
-    "name": "Intel Core i7-12700K Processor",
-    "price": 380,
+    "img": "IMAGE/ryzen 7 7800x3d.png",
+    "name": "AMD Ryzen 7 7800X3D TRAY",
+    "price": 84900,
     "catetory":"cpu"
   },
   {

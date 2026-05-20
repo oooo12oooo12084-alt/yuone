@@ -935,7 +935,7 @@
         <div class="slider-container-new">
             <div class="slider-wrapper-new">
                 <div class="slider-new" id="cpuSlider">
-                    <!-- المنتجات سيتم إدراجها هنا -->
+                    <!-- المنتجات سيتم إدراجها هنا من ملف products.json -->
                 </div>
             </div>
             
@@ -1151,6 +1151,360 @@ function setupCategoryScroll(categoryId) {
         scrollContainer.scrollLeft = scrollLeft - walk;
     });
 }
+</script>
+
+<!-- بيانات المنتجات -->
+<script>
+const productsData = [
+  {
+    "id": 0,
+    "img": "img/product/0.png",
+    "name": "SAMSUNG 55 Inch UHD 4K Smart TV With Receiver",
+    "price": 350,
+    "catetory":"electronics"
+  },
+  {
+    "id": 1,
+    "img": "img/product/1.png",
+    "name": "Redmi 13C Dual SIM with 6GB RAM",
+    "price": 280,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 2,
+    "img": "img/product/2.png",
+    "name": "Dell Laptop Latitude 5530 Core i7-1255U 8GB SSD",
+    "price": 400,
+    "catetory":"electronics"
+  },
+  {
+    "id": 3,
+    "img": "img/product/3.png",
+    "name": "Canon EOS RP Mirrorless Camera",
+    "price": 530,
+    "catetory":"electronics"
+  },
+  {
+    "id": 4,
+    "img": "img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 5,
+    "img": "img/product/5.png",
+    "name": "Samsung 27-Inch G55C Odyssey QHD 4k",
+    "price": 280,
+    "catetory":"electronics"
+  },
+  {
+    "id": 6,
+    "img": "img/product/6.png",
+    "name": "Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)",
+    "price": 220,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 7,
+    "img": "img/product/7.png",
+    "name": "HP Victus Gaming Laptop 8RAM SSD",
+    "price": 370,
+    "catetory":"electronics"
+  },
+  {
+    "id": 8,
+    "img": "img/product/8.png",
+    "name": "Xiaomi Redmi 13C Dual SIM 8GB",
+    "price": 320,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 9,
+    "img": "img/product/9.png",
+    "name": "Handheld Barcode Scanner 1D/2D/QR Code",
+    "price": 80,
+    "old_price": 100,
+    "catetory":"electronics"
+  },
+  {
+    "id": 10,
+    "img": "img/product/10.png",
+    "name": "Large Venue building mapping Projector",
+    "price": 300,
+    "catetory":"electronics"
+  },
+  {
+    "id": 11,
+    "img": "img/product/11.png",
+    "name": "Infinix Hot 40i (RAM: 4+4GB, 128GB)",
+    "price": 260,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 12,
+    "img": "img/product/12.png",
+    "name": "HP DeskJet 2710 Printer, All-in-One",
+    "price": 370,
+    "catetory":"electronics"
+  },
+  {
+    "id": 13,
+    "img": "img/product/13.png",
+    "name": "Fuzzy Logic Rice Cooker DIGITAL-JAR 1.8L 940W – HD4515/67",
+    "price": 490,
+    "catetory":"appliances"
+  },
+  {
+    "id": 14,
+    "img": "img/product/14.png",
+    "name": "Sencor STS 5070SS Electric Toaster for Four Slices",
+    "price": 340,
+    "catetory":"appliances"
+  },
+  {
+    "id": 15,
+    "img": "img/product/15.png",
+    "name": "Infinix Smart 6 Plus (Miracle Black)",
+    "price": 240,
+    "old_price": 300,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 16,
+    "img": "img/product/16.png",
+    "name": "Washing Machine 959 Series 8kg Senator Aqua SX, Silver",
+    "price": 600,
+    "old_price": 700,
+    "catetory":"appliances"
+  },
+  {
+    "id": 17,
+    "img": "img/product/17.png",
+    "name": "HIKVISION PTZ Camera 4K Outdoo",
+    "price": 185,
+    "catetory":"electronics"
+  },
+  {
+    "id": 18,
+    "img": "img/product/18.png",
+    "name": "OPPO Reno11 5G 256GB 12GB",
+    "price": 225,
+    "catetory":"mobiles"
+  },
+  {
+    "id": 19,
+    "img": "img/product/19.png",
+    "name": "VIVAX kettle WH-175L with a capacity of 1.7 ",
+    "price": 140,
+    "catetory":"appliances"
+  },
+  {
+    "id": 20,
+    "img": "img/product/20.png",
+    "name": "Kenstar Ester ABS Plastic 750W Mixer Grinder",
+    "price": 280,
+    "old_price": 330,
+    "catetory":"appliances"
+  },
+  {
+    "id": 21,
+    "img": "img/product/21.png",
+    "name": "Multifunctional Food Processor",
+    "price": 350,
+    "catetory":"appliances"
+  },
+  {
+    "id": 22,
+    "img": "img/product/22.png",
+    "name": "Zanussi Washing Machine 8 Kg 1200 RPM ",
+    "price": 580,
+    "catetory":"appliances"
+  },
+  {
+    "id": 23,
+    "img": "img/product/23.png",
+    "name": "Sharp 42 Lt Electronic Oven Convection",
+    "price": 400,
+    "catetory":"appliances"
+  },
+  {
+    "id": 24,
+    "img": "img/product/24.png",
+    "name": "Lenovo Monitor Legion R27fc-30 Gaming Curved",
+    "price": 300,
+    "old_price": 380,
+    "catetory":"electronics"
+  },
+  {
+    "id": 25,
+    "img": "IMAGE/RTX 4060.png",
+    "name": "RTX 4060",
+    "price": 79000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 26,
+    "img": "IMAGE/RTX3060.png",
+    "name": "RTX 3060 12GB",
+    "price": 60000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 27,
+    "img": "IMAGE/4070RTX.png",
+    "name": "RTX 4070",
+    "price": 125000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 28,
+    "img": "IMAGE/RX6600.png",
+    "name": "RX 6600",
+    "price": 49000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 29,
+    "img": "IMAGE/RX 6700x.png",
+    "name": "RX 6700 XT",
+    "price": 78000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 30,
+    "img": "IMAGE/GTX 1660.png",
+    "name": "GTX 1660 Super",
+    "price": 39000,
+    "catetory":"gpu"
+  },
+  {
+    "id": 31,
+    "img": "IMAGE/log102.png",
+    "name": "Logitech G102 Gaming Mouse",
+    "price": 420,
+    "catetory":"mouse"
+  },
+  {
+    "id": 32,
+    "img": "IMAGE/razer v3.png",
+    "name": "RAZER BASILISK V3 X HYPERSPEED WIRELESS - BLACK",
+    "price": 1500,
+    "old_price": 1800,
+    "catetory":"mouse"
+  },
+  {
+    "id": 33,
+    "img": "IMAGE/v3.png",
+    "name": "Razer Viper V3 HyperSpeed",
+    "price": 17000,
+    "old_price": 17500,
+    "catetory":"mouse"
+  },
+  {
+    "id": 34,
+    "img": "IMAGE/deathadder.png",
+    "name": "RAZER DEATHADDER ESSENTIAL",
+    "price": 8500,
+    "old_price": 9500,
+    "catetory":"mouse"
+  },
+  {
+    "id": 35,
+    "img": "IMAGE/prox.png",
+    "name": "LOGITECH G PRO X Superlight Wireless Gaming Mouse",
+    "price": 22000,
+    "old_price": 25000,
+    "catetory":"mouse"
+  },
+  {
+    "id": 36,
+    "img": "IMAGE/g502.png",
+    "name": "Logitech G502 X PLUS Wireless Gaming Mouse RGB",
+    "price": 18000,
+    "old_price": 20000,
+    "catetory":"mouse"
+  },
+  {
+    "id": 37,
+    "img": "IMAGE/i7 11700k.png",
+    "name": "Intel Core i7-11700K Processor",
+    "price": 43000,
+    "catetory":"cpu"
+  },
+  {
+    "id": 38,
+    "img": "IMAGE/i5 12400f.png",
+    "name": "Intel Core i5-12400F",
+    "price": 23900,
+    "catetory":"cpu"
+  },
+  {
+    "id": 39,
+    "img": "IMAGE/i5 14600k.png",
+    "name": "Intel Core i5-14600K Processor",
+    "price": 49500,
+    "catetory":"cpu"
+  },
+  {
+    "id": 40,
+    "img": "IMAGE/rayzen 5 5600g.png",
+    "name": "AMD Ryzen 5 PRO 5650G TRAY",
+    "price": 25500,
+    "catetory":"cpu"
+  },
+  {
+    "id": 41,
+    "img": "IMAGE/5 5700x.png",
+    "name": "AMD Ryzen 7 5700X",
+    "price": 38900,
+    "catetory":"cpu"
+  },
+  {
+    "id": 42,
+    "img": "IMAGE/ryzen 7 7800x3d.png",
+    "name": "AMD Ryzen 7 7800X3D TRAY",
+    "price": 84900,
+    "catetory":"cpu"
+  },
+  {
+    "id": 43,
+    "img": "img/product/5.png",
+    "name": "Corsair Vengeance RGB Pro 32GB DDR4",
+    "price": 150,
+    "catetory":"ram"
+  },
+  {
+    "id": 44,
+    "img": "img/product/6.png",
+    "name": "G.Skill Trident Z RGB 32GB DDR4",
+    "price": 140,
+    "catetory":"ram"
+  },
+  {
+    "id": 45,
+    "img": "img/product/7.png",
+    "name": "Kingston HyperX Fury 16GB DDR4",
+    "price": 80,
+    "catetory":"ram"
+  },
+  {
+    "id": 46,
+    "img": "img/product/8.png",
+    "name": "Crucial Ballistix 32GB DDR4",
+    "price": 130,
+    "catetory":"ram"
+  },
+  {
+    "id": 47,
+    "img": "img/product/9.png",
+    "name": "Team T-Force Delta RGB 16GB DDR4",
+    "price": 75,
+    "catetory":"ram"
+  }
+];
 </script>
 
 <!-- منزلق المنتجات - سكريبت JavaScript -->

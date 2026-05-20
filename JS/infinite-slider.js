@@ -25,8 +25,14 @@ class InfiniteSlider {
 
     async init() {
         try {
-            const response = await fetch(this.productsUrl);
-            let allProducts = await response.json();
+            // استخدام بيانات المنتجات المضمنة إذا كانت متاحة، أو محاولة التحميل من ملف JSON
+            let allProducts;
+            if (typeof productsData !== 'undefined') {
+                allProducts = productsData;
+            } else {
+                const response = await fetch(this.productsUrl);
+                allProducts = await response.json();
+            }
 
             if (this.categoryFilter) {
                 this.products = allProducts.filter(p => p.catetory === this.categoryFilter).slice(0, this.productsCount);
@@ -168,6 +174,7 @@ class InfiniteSlider {
             this.currentIndex++;
             // عند الوصول للنهاية، عد للبداية بشكل سلس
             if (this.currentIndex >= endIndex) {
+                this.updateSliderPosition();
                 setTimeout(() => {
                     this.slider.style.transition = 'none';
                     this.currentIndex = startIndex;
@@ -178,6 +185,7 @@ class InfiniteSlider {
                     }, 50);
                 }, this.animationDuration);
             } else {
+                this.updateSliderPosition();
                 setTimeout(() => {
                     this.isTransitioning = false;
                 }, this.animationDuration);
@@ -186,6 +194,7 @@ class InfiniteSlider {
             this.currentIndex--;
             // عند الوصول للبداية، عد للنهاية بشكل سلس
             if (this.currentIndex < startIndex) {
+                this.updateSliderPosition();
                 setTimeout(() => {
                     this.slider.style.transition = 'none';
                     this.currentIndex = endIndex - 1;
@@ -196,13 +205,12 @@ class InfiniteSlider {
                     }, 50);
                 }, this.animationDuration);
             } else {
+                this.updateSliderPosition();
                 setTimeout(() => {
                     this.isTransitioning = false;
                 }, this.animationDuration);
             }
         }
-
-        this.updateSliderPosition();
 
         // إيقاف التشغيل التلقائي عند التفاعل اليدوي
         if (this.autoPlay) {
