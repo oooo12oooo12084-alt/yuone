@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
         indicatorsId: 'ramIndicators',
         productsUrl: 'products.json',
         categoryFilter: 'ram',
-        productsCount: 6,
+        productsCount: 12,
         itemsPerView: 6,
         itemsToScroll: 1,
         autoPlay: true,
